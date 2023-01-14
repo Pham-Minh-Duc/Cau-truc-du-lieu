@@ -1,0 +1,92 @@
+kiểu cấu trúc dữ liệu
+
+1. Arrays
+
+	- có kích thước cố định.
+	- giữ các items có cùng kiểu dữ liệu.
+	- được đánh chỉ mục, cho phép truy cập ngãu nhiên vào mảng.
+	
+     các phép toán trên mảng:
+
+	-Truy cập ngẫu nhiên: Cho phép truy cập tới một phần tử bất kỳ trong mảng bằng chỉ mục (index).
+
+	-Tìm kiếm: Tìm kiếm một phần tử bằng chỉ mục hoặc giá trị của nó.
+
+	-Cập nhật: cập nhật giá trị của 1 chỉ mục thông qua index. Nếu muốn thêm 1 phần tử vào mảng, ta tạo 1 mảng mới có kích thước được tăng lên, sau đó 	copy phần tử cũ và thêm phần tử mới.
+
+2. Linked Lists
+
+	- là 1 cấu trúc tuần tự theo thứ tự được liên kết với nhau.
+	--> không thể truy cập ngẫu nhiên.
+	- các phần tử trong link lists: node.
+	- mỗi node chứa: key và con trỏ(trỏ tới node kế tiếp được gọi là next).
+	- phần tử đầu: head.
+	- phần tử cuối: tail. 
+	
+	Một số loại linked list:
+
+	-Singly linked list: Duyệt qua các phẩn tử theo chiều hướng về phía trước.
+	-Doubly linked list: Duyệt qua các phẩn tử theo cả chiều tiến và lùi. Các node sẽ thêm một con trỏ được gọi là pre, trỏ tới node 			trước đó.
+	Circular linked list: Là một doubly linked list đặc biệt, khi mà con trỏ prev của head trỏ tới tail và con trỏ next của tail trỏ tới 			head.
+
+     Các phép toán trên linked list:
+
+	-Tìm kiếm: Tìm phần tử đầu tiên với key là k trong một linked list được cho trước được thực hiện đơn giản bằng một quá trình duyệt tuần tự và trả về 	con trỏ trỏ tới phần tử đó.
+
+	-Thêm: Ta có thể thực hiện theo 3 cách: thêm vào đầu list, thêm vào giữa list hoặc thêm vào cuối của list.
+
+	-Xoá: Xoá một phần tử x khỏi một linked list cho trước. Việc xoá một node có thể thực hiện theo 3 cách: xoá từ đầu danh sách, xoá từ giữa danh sách 	hoặc xoá từ cuối danh sách.
+
+3. Stacks
+
+	Stack là một cấu trúc dạng LIFO (Last In First Out - phần tử được đưa vào sau cùng sẽ có thể được truy cập đầu tiên).
+
+     Hoạt động của stack:
+	
+	Có 2 hoạt động cơ bản:
+	
+		- Push: Thêm một phần tử vào đỉnh của stack.
+		- Pop: Xoá một phần tử khỏi top của stack.
+	Ngoài ra, còn có một số hàm khác được bổ sung vào stack để kiểm tra trạng thái, gồm:
+		- Peek: Trả về phần tử ở đỉnh của stack mà không xoá nó đi.
+		- isEmpty: Kiểm tra một stack có rỗng không.
+		- isFull: Kiểm tra một stack có đang đầy không.
+4. Queue
+
+	Queue - hàng đợi là một cấu trúc dạng FIFO (First In First Out - phần tử được đặt ở đầu sẽ có thể được truy cập đầu tiên)
+
+     Hoạt động của queue:
+
+	Có 2 hoạt động cơ bản:
+
+		- Enqueue: Thêm một phần tử vào phía cuối queue.
+		- Dequeue: Xoá một phần tử ở phía đầu queue
+
+
+5. Tree
+
+	Tree - cây là một cấu trúc dữ liệu có phân cấp.
+	dữ liệu được tổ chức theo thứ bậc và được liên kết.
+
+
+     Binary Search Tree
+
+	Một binary search tree (BST): là một cấu trúc dữ liệu lưu trữ dữ liệu theo dạng cấu trúc thứ bậc. Cấu trúc dữ liệu này lưu trữ giá trị theo thứ tự sắp xếp. Mỗi node trong một BST bao gồm các thuộc tính: 
+
+	+ key: giá trị được lưu trữ trong node.
+	+ left: con trỏ tới con bên trái.
+	+ right: con trỏ tới con bên phải.
+	+ p: con trỏ tới node cha. xét một node x trong cây tìm kiếm nhị phân:
+		- Nếu y là node con bên trái của x, thì y.key <= x.key.
+		- Nếu y là node con bên phải của x, thì y.key => x.key.
+
+
+
+
+
+
+
+
+
+
+
